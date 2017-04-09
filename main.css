@@ -1,7 +1,6 @@
 body {
 	background: #18BC9C;
 	color: #ffffff;
-	height: 3000px;
 }
 
 body > .container {
@@ -47,6 +46,105 @@ body > .container {
 	font-size: 1.8em;
 }
 
-.results-section > div {
+/*Белая линия*/
+.clock-section .line hr {
+	color: #ffffff;
+	border-width: 4px;
+    border-radius: 1px;
+
+}
+.line {
+	position: relative;
+	margin-top: -30px;
+    margin-bottom: 45px;
+}
+/*Кнопки в линии*/
+.line-options {
+	background: #18bc9c;
+    display: inline-block;
+    padding: 0 11px;
+    position: relative;
+    top: 35px;
+    font-size: 1.4em;
+}
+.line-options span {
+	cursor: pointer;
+}
+
+
+
+.results-section > .row > .col-md-6:nth-child(1) {
+	padding-right: 6px;
+}
+.results-section > .row > .col-md-6:nth-child(2) {
+	padding-left: 6px;
+}
+.results-section > .row > .col-md-6 .col-md-2 {
+	padding-left: 0px;
+}
+.results-section > .row > .col-md-6 .col-md-10 {
+	padding-right: 12px;
+}
+/*Окрашивание результатов в синий*/
+.results-section .results {
 	background: #2C3E50;
+	height: 230px;
+}
+
+/*Размеры шрифтов для левого и правого списков*/
+.results-section .plain-results { font-size: 1.7em;}
+.results-section .average-results {font-size: 1.4em;}
+
+.plain-results {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.plain-results::-webkit-scrollbar {
+    width: 15px;
+}
+.plain-results::-webkit-scrollbar-thumb {
+	border: 5px solid #2C3E50;
+    border-radius: 10px;
+    background: white;
+}
+
+/*Списки результатов*/
+.results-section .results > ul{
+	list-style: none;
+	text-align: center;
+	padding:10px 20px;
+}
+
+/*Отсупы между элементами списка*/
+.results-section .results > ul > li{
+	margin-bottom: 5px;
+	position: relative;
+	display: inline;
+}
+
+/*Добавляем перенос при inline*/
+.results-section .results > ul > li::after{
+	content: "\A";
+	white-space: pre;
+}
+
+/*Общий стиль для маркеров*/
+li.marker::before {
+	content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    border-radius: 50%;
+    right: -0.8em;
+    top: 0.35em;
+}
+
+/*Цвета маркеров*/
+li.best-result::before {background: #2ecc71}
+li.worst-result::before {background: #e74c3c}
+
+/*Отступы у социальных кнопок*/
+.socials-wrapper > a {
+	display: block;
+	margin-bottom: 19px;
 }
