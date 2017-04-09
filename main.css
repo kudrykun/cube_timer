@@ -1,0 +1,52 @@
+body {
+	background: #18BC9C;
+	color: #ffffff;
+	height: 3000px;
+}
+
+body > .container {
+	margin-top: 55px;
+}
+.navbar-custom {
+	background: #2C3E50;
+}
+
+.navbar-custom a {
+	color: #ffffff;
+}
+
+.navbar-custom .nav>li>a:hover{
+	background: none;
+}
+
+.navbar-custom .navbar-brand {
+	padding: 0 0;
+	height: 55px;
+	font-size: 1.8em;
+}
+.navbar-custom .navbar-brand > img{
+	display: inline-block;
+	background: #087A64;
+}
+
+.navbar-custom .navbar-nav>li>a {
+	line-height: 25px;
+	font-size: 1.2em;
+}
+
+.clock-section {
+	font-family: 'Droid Sans Mono', monospace;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.clock-section .clock {
+	font-size: 12em;
+}
+.clock-section .scramble {
+	font-size: 1.8em;
+}
+
+.results-section > div {
+	background: #2C3E50;
+}
