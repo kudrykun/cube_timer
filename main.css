@@ -1,6 +1,13 @@
 body {
-	background: #18BC9C;
+	background: -moz-linear-gradient(90deg, rgba(27,204,169,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(27,204,169,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(27,204,169,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(27,204,169,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(27,204,169,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(27,204,169,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#1BCCA9',GradientType=0 ); /* ie6-9 */
 	color: #ffffff;
+	font-family: 'PT Sans Caption', sans-serif;
 }
 
 body > .container {
@@ -22,6 +29,7 @@ body > .container {
 	padding: 0 0;
 	height: 55px;
 	font-size: 1.8em;
+	font-family: 'Catamaran', sans-serif;
 }
 .navbar-custom .navbar-brand > img{
 	display: inline-block;
@@ -60,7 +68,7 @@ body > .container {
 }
 /*Кнопки в линии*/
 .line-options {
-	background: #18bc9c;
+	background: #13aa96;
     display: inline-block;
     padding: 0 11px;
     position: relative;
