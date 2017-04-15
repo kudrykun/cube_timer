@@ -156,3 +156,19 @@ li.worst-result::before {background: #e74c3c}
 	display: block;
 	margin-bottom: 19px;
 }
+
+
+.avatar {
+	width: 55px;
+	display: inline;
+	margin-right: 13px;
+    padding: 4px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(41% at 50% 50%);
+}
+ul.user-options .username {
+	float: right;
+	display: inline;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
